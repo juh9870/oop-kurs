@@ -1,0 +1,38 @@
+<#@ template language="C#" #>
+<#@ output extension=".cs" #>
+<#
+    string[] types =
+    {
+        "short", "int", "long",
+        "ushort", "uint", "ulong",
+        "float", "double", "decimal",
+        "byte", "sbyte"
+    };
+
+    static string Capitalise(string str)
+    {
+        return char.ToUpper(str[0]) + str.Substring(1);
+    }
+#>
+using Presentation.Interface.Readers.Validators;
+namespace Presentation.Interface.Readers {
+<#
+    foreach (var type in types)
+    {
+#>
+    public class <#= Capitalise(type) #>Reader : NumericReader<<#= type #>>
+    {
+        public <#= Capitalise(type) #>Reader(string message, Validator<<#= type #>> validator = null) : base(message, validator){}
+        public <#= Capitalise(type) #>Reader(string message, <#= type #> min, <#= type #> max) : base(message, min,max){}
+        protected override bool TryParse(string text, out <#= type #> result)=><#= type #>.TryParse(text, out result);
+    }
+    public class <#= Capitalise(type) #>RangeReader : RangeReader<<#= type #>>
+    {
+        public <#= Capitalise(type) #>RangeReader(string message, string minFieldName, string maxFieldName, bool allowZeroLengthRange = true, Validator<<#= type #>> validator = null) : base(message, minFieldName, maxFieldName, allowZeroLengthRange, validator){}
+        public <#= Capitalise(type) #>RangeReader(string message, string minFieldName, string maxFieldName, bool allowZeroLengthRange, <#= type #> min, <#= type #> max) : base(message, minFieldName, maxFieldName, allowZeroLengthRange, min, max){}
+        protected override Reader<<#= type #>> GetReader(string message, Validator<<#= type #>> validator)=>new <#= Capitalise(type) #>Reader(message,validator);
+    }
+<#
+    }
+#>
+}

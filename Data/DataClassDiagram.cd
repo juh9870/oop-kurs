@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Data.Bundles.Bundle" Collapsed="true">
+    <Position X="5.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAiAAkASAKABZAACAUBCoEAClFAHEAAIABAQCQIEk=</HashCode>
+      <FileName>Bundles\Bundle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Data.Bundles.DuplicatingBundleKeyException" Collapsed="true">
+    <Position X="8.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Bundles\DuplicatingBundleKeyException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Data.Bundles.JsonBundle" Collapsed="true">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <NestedTypes>
+      <Class Name="Data.Bundles.JsonBundle.Factory" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Bundles\JsonBundle.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAACAEAAACAAAAAAAQAAAAACFAABAAAAAgAAAQAAA=</HashCode>
+      <FileName>Bundles\JsonBundle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Data.IO.FileInterface" Collapsed="true">
+    <Position X="3.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAIAAAAAAAAgCAAAAAAAAgAAAAEAAAA=</HashCode>
+      <FileName>IO\FileInterface.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Data.IO.IoInterface" Collapsed="true">
+    <Position X="3.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAACAAAAgCAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>IO\IoInterface.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Data.Bundles.IBundlable" Collapsed="true">
+    <Position X="8.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Bundles\IBundlable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

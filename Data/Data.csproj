@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Update="bundle\Bundle.tt">
+        <Generator>TextTemplatingFileGenerator</Generator>
+        <LastGenOutput>Bundle.cs</LastGenOutput>
+      </None>
+      <None Update="Bundles\Bundle.tt">
+        <Generator>TextTemplatingFileGenerator</Generator>
+        <LastGenOutput>Bundle.cs</LastGenOutput>
+      </None>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="bundle\Bundle.cs">
+        <AutoGen>True</AutoGen>
+        <DesignTime>True</DesignTime>
+        <DependentUpon>Bundle.tt</DependentUpon>
+      </Compile>
+      <Compile Update="Bundles\Bundle.cs">
+        <DependentUpon>Bundle.tt</DependentUpon>
+      </Compile>
+    </ItemGroup>
+
+</Project>

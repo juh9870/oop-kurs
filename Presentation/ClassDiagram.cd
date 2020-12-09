@@ -1,0 +1,748 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Presentation.Connectors.ClientTable" Collapsed="true">
+    <Position X="6.75" Y="13.5" Width="1.5" />
+    <AssociationLine Name="_storage" Type="Logic.Storage">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="12.731" Y="-0.592" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgBA=</HashCode>
+      <FileName>Connectors\Tables\ClientTable.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_storage" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Presentation.Connectors.ExtendedClientTable" Collapsed="true">
+    <Position X="6.75" Y="15" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>Connectors\Tables\ExtendedClientTable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Presentation.Connectors.OffersTable" Collapsed="true">
+    <Position X="9.5" Y="15" Width="1.5" />
+    <AssociationLine Name="_storage" Type="Logic.Storage">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="8.726" Y="-2.246" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgBA=</HashCode>
+      <FileName>Connectors\Tables\OffersTable.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_storage" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Presentation.Connectors.RealtyOrClientTable" Collapsed="true">
+    <Position X="12" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>Connectors\Tables\RealtyOrClientTable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Presentation.Connectors.RealtyTable" Collapsed="true">
+    <Position X="9.5" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>Connectors\Tables\RealtyTable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Presentation.Connectors.ClientConsoleInterface" Collapsed="true">
+    <Position X="14.75" Y="10" Width="1.5" />
+    <NestedTypes>
+      <Class Name="Presentation.Connectors.ClientConsoleInterface.BankAccountValidator" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Connectors\ClientConsoleInterface.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <AssociationLine Name="_storage" Type="Logic.Storage" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="16.062" Y="10.691" />
+        <Point X="16.062" Y="12.688" />
+        <Point X="20" Y="12.688" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="3.236" Y="1.602" Height="0.182" Width="0.829" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="ClientManipulator" Type="Presentation.Interface.ClassManipulator&lt;T&gt;" ManuallyRouted="true">
+      <Path>
+        <Point X="15.5" Y="10" />
+        <Point X="15.5" Y="9.441" />
+        <Point X="13.927" Y="9.441" Type="JumpStart" />
+        <Point X="13.76" Y="9.441" Type="JumpEnd" />
+        <Point X="11.677" Y="9.441" Type="JumpStart" />
+        <Point X="11.51" Y="9.441" Type="JumpEnd" />
+        <Point X="9.969" Y="9.441" />
+        <Point X="9.969" Y="8.062" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-6.93" Y="1.686" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="ClientTable" Type="Presentation.Connectors.ClientTable" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="15" Y="10.691" />
+        <Point X="15" Y="13.125" />
+        <Point X="13.833" Y="13.125" Type="JumpStart" />
+        <Point X="13.667" Y="13.125" Type="JumpEnd" />
+        <Point X="11.833" Y="13.125" Type="JumpStart" />
+        <Point X="11.667" Y="13.125" Type="JumpEnd" />
+        <Point X="10.74" Y="13.125" Type="JumpStart" />
+        <Point X="10.573" Y="13.125" Type="JumpEnd" />
+        <Point X="10.333" Y="13.125" Type="JumpStart" />
+        <Point X="10.167" Y="13.125" Type="JumpEnd" />
+        <Point X="9.208" Y="13.125" Type="JumpStart" />
+        <Point X="9.042" Y="13.125" Type="JumpEnd" />
+        <Point X="8.344" Y="13.125" />
+        <Point X="8.344" Y="13.846" />
+        <Point X="8.25" Y="13.846" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="6.596" Y="2.901" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="ExtendedTable" Type="Presentation.Connectors.ClientTable" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="15" Y="10.691" />
+        <Point X="15.017" Y="10.691" />
+        <Point X="15.017" Y="13.125" />
+        <Point X="13.833" Y="13.125" Type="JumpStart" />
+        <Point X="13.667" Y="13.125" Type="JumpEnd" />
+        <Point X="11.833" Y="13.125" Type="JumpStart" />
+        <Point X="11.667" Y="13.125" Type="JumpEnd" />
+        <Point X="10.74" Y="13.125" Type="JumpStart" />
+        <Point X="10.573" Y="13.125" Type="JumpEnd" />
+        <Point X="10.333" Y="13.125" Type="JumpStart" />
+        <Point X="10.167" Y="13.125" Type="JumpEnd" />
+        <Point X="9.208" Y="13.125" Type="JumpStart" />
+        <Point X="9.042" Y="13.125" Type="JumpEnd" />
+        <Point X="7.906" Y="13.125" />
+        <Point X="7.906" Y="13.5" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-8.031" Y="2.389" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="RequirementsManipulator" Type="Presentation.Interface.ClassManipulator&lt;T&gt;" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="15.5" Y="10" />
+        <Point X="15.5" Y="9.441" />
+        <Point X="13.927" Y="9.441" Type="JumpStart" />
+        <Point X="13.76" Y="9.441" Type="JumpEnd" />
+        <Point X="11.677" Y="9.441" Type="JumpStart" />
+        <Point X="11.51" Y="9.441" Type="JumpEnd" />
+        <Point X="9.875" Y="9.441" />
+        <Point X="9.875" Y="8.062" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-7.475" Y="1.057" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAIAAgAAgABAAIAAAAAAACEAAEAAAAACAAAAAYAgAA=</HashCode>
+      <FileName>Connectors\ClientConsoleInterface.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_storage" />
+      <Field Name="ClientManipulator" />
+      <Field Name="ClientTable" />
+      <Field Name="ExtendedTable" />
+      <Field Name="RequirementsManipulator" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Presentation.Connectors.MainMenu" Collapsed="true">
+    <Position X="19.75" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Connectors\MainMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Presentation.Connectors.OffersList" Collapsed="true">
+    <Position X="16.5" Y="10" Width="1.5" />
+    <AssociationLine Name="_client" Type="Logic.Model.Client">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="2.494" Y="0.876" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="_storage" Type="Logic.Storage">
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="1.568" Y="0.962" Height="0.182" Width="1.051" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAACABAEIAAAAAAAAAAAAAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>Connectors\OffersList.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_client" />
+      <Field Name="_storage" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Presentation.Connectors.RealtyConsoleInterface" Collapsed="true">
+    <Position X="11.25" Y="10" Width="1.5" />
+    <AssociationLine Name="_storage" Type="Logic.Storage">
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="7.853" Y="2.011" Height="0.182" Width="0.892" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="RealtyManipulator" Type="Presentation.Interface.ClassManipulator&lt;T&gt;">
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="-0.244" Y="-2.24" Height="0.182" Width="1.414" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAIAAkAQAABAAIAAAAAAACAAAAAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>Connectors\RealtyConsoleInterface.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_storage" />
+      <Field Name="RealtyTable" />
+      <Field Name="RealtyManipulator" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Presentation.Connectors.RealtyOrClient" Collapsed="true">
+    <Position X="14" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAACQ=</HashCode>
+      <FileName>Connectors\RealtyOrClient.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Presentation.Connectors.RealtyOrClientList" Collapsed="true">
+    <Position X="13" Y="10" Width="1.5" />
+    <AssociationLine Name="RealtyOrClientTable" Type="Presentation.Connectors.RealtyOrClientTable" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="13.5" Y="10.691" />
+        <Point X="13.5" Y="12" />
+        <Point X="13.75" Y="12" />
+        <Point X="13.75" Y="13.846" />
+        <Point X="13.5" Y="13.846" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.194" Y="2.924" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACgAAA=</HashCode>
+      <FileName>Connectors\RealtyOrClientList.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="RealtyOrClientTable" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Presentation.Interface.Readers.Validators.AlwaysValid&lt;T&gt;" Collapsed="true">
+    <Position X="15.5" Y="22.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interface\Readers\Validators\AlwaysValid.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Presentation.Interface.Readers.Validators.BoundsValidator&lt;T&gt;" Collapsed="true">
+    <Position X="17.5" Y="22.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAEABAAAAAAAA=</HashCode>
+      <FileName>Interface\Readers\Validators\BoundsValidator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Presentation.Interface.Readers.Validators.GreaterThanValidator&lt;T&gt;" Collapsed="true">
+    <Position X="15.5" Y="21.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAoAAAAAAA=</HashCode>
+      <FileName>Interface\Readers\Validators\GreaterThanValidator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Presentation.Interface.Readers.Validators.LessThanValidator&lt;T&gt;" Collapsed="true">
+    <Position X="17.5" Y="21.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Interface\Readers\Validators\LessThanValidator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Presentation.Interface.Readers.Validators.MultiValidator&lt;T&gt;" Collapsed="true">
+    <Position X="19.75" Y="21.75" Width="1.5" />
+    <AssociationLine Name="_validators" Type="Presentation.Interface.Readers.Validators.Validator&lt;T&gt;">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.937" Y="-0.344" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interface\Readers\Validators\MultiValidator.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="_validators" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Presentation.Interface.Readers.Validators.Validator&lt;T&gt;" Collapsed="true">
+    <Position X="17.5" Y="20.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interface\Readers\Validators\Validator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Presentation.Interface.Readers.BooleanReader" Collapsed="true">
+    <Position X="16.25" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interface\Readers\BooleanReader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Presentation.Interface.Readers.ElementReader&lt;T&gt;" Collapsed="true">
+    <Position X="20.75" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Interface\Readers\ElementReader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Presentation.Interface.Readers.EnumReader&lt;T&gt;" Collapsed="true">
+    <Position X="18.5" Y="16.5" Width="1.5" />
+    <NestedTypes>
+      <Class Name="Presentation.Interface.Readers.EnumReader&lt;T&gt;.NotAnEnumException" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Interface\Readers\EnumReader.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAEAAAAAAAAAAAAAACA=</HashCode>
+      <FileName>Interface\Readers\EnumReader.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_idReader" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Presentation.Interface.Readers.ListReader&lt;T&gt;" Collapsed="true">
+    <Position X="20.75" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interface\Readers\ListReader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Presentation.Interface.Readers.MultiFieldReader" Collapsed="true">
+    <Position X="34" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interface\Readers\MultiFieldReader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Presentation.Interface.Readers.MultiFieldReader&lt;T&gt;" Collapsed="true">
+    <Position X="34" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Interface\Readers\MultiFieldReader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Presentation.Interface.Readers.NumericReader&lt;T&gt;" Collapsed="true">
+    <Position X="25.25" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interface\Readers\NumericReader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Presentation.Interface.Readers.ShortReader" Collapsed="true">
+    <Position X="23" Y="18.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interface\Readers\NumericReaders.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Presentation.Interface.Readers.ShortRangeReader" Collapsed="true">
+    <Position X="31.75" Y="19.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interface\Readers\NumericReaders.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Presentation.Interface.Readers.IntReader" Collapsed="true">
+    <Position X="29.75" Y="18.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interface\Readers\NumericReaders.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Presentation.Interface.Readers.IntRangeReader" Collapsed="true">
+    <Position X="38.5" Y="19.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interface\Readers\NumericReaders.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Presentation.Interface.Readers.LongReader" Collapsed="true">
+    <Position X="27.5" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interface\Readers\NumericReaders.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Presentation.Interface.Readers.LongRangeReader" Collapsed="true">
+    <Position X="36.25" Y="18.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interface\Readers\NumericReaders.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Presentation.Interface.Readers.UshortReader" Collapsed="true">
+    <Position X="25.25" Y="19.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interface\Readers\NumericReaders.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Presentation.Interface.Readers.UshortRangeReader" Collapsed="true">
+    <Position X="34" Y="20.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interface\Readers\NumericReaders.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Presentation.Interface.Readers.UintReader" Collapsed="true">
+    <Position X="25.25" Y="18.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interface\Readers\NumericReaders.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Presentation.Interface.Readers.UintRangeReader" Collapsed="true">
+    <Position X="34" Y="19.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interface\Readers\NumericReaders.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Presentation.Interface.Readers.UlongReader" Collapsed="true">
+    <Position X="23" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interface\Readers\NumericReaders.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Presentation.Interface.Readers.UlongRangeReader" Collapsed="true">
+    <Position X="31.75" Y="18.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interface\Readers\NumericReaders.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Presentation.Interface.Readers.FloatReader" Collapsed="true">
+    <Position X="29.75" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interface\Readers\NumericReaders.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Presentation.Interface.Readers.FloatRangeReader" Collapsed="true">
+    <Position X="38.5" Y="18.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interface\Readers\NumericReaders.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Presentation.Interface.Readers.DoubleReader" Collapsed="true">
+    <Position X="27.5" Y="19.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interface\Readers\NumericReaders.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Presentation.Interface.Readers.DoubleRangeReader" Collapsed="true">
+    <Position X="36.25" Y="20.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interface\Readers\NumericReaders.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Presentation.Interface.Readers.DecimalReader" Collapsed="true">
+    <Position X="27.5" Y="18.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interface\Readers\NumericReaders.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Presentation.Interface.Readers.DecimalRangeReader" Collapsed="true">
+    <Position X="36.25" Y="19.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interface\Readers\NumericReaders.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Presentation.Interface.Readers.ByteReader" Collapsed="true">
+    <Position X="25.25" Y="17.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interface\Readers\NumericReaders.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Presentation.Interface.Readers.ByteRangeReader" Collapsed="true">
+    <Position X="34" Y="18.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interface\Readers\NumericReaders.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Presentation.Interface.Readers.SbyteReader" Collapsed="true">
+    <Position X="23" Y="19.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interface\Readers\NumericReaders.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Presentation.Interface.Readers.SbyteRangeReader" Collapsed="true">
+    <Position X="31.75" Y="20.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interface\Readers\NumericReaders.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Presentation.Interface.Readers.RangeReader&lt;T&gt;" Collapsed="true">
+    <Position X="34" Y="17.5" Width="1.5" />
+    <NestedTypes>
+      <Class Name="Presentation.Interface.Readers.RangeReader&lt;T&gt;.MinMaxValidator" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Interface\Readers\RangeReader.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <AssociationLine Name="_firstReader" Type="Presentation.Interface.Readers.Reader&lt;T&gt;" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="34" Y="17.846" />
+        <Point X="33.625" Y="17.846" />
+        <Point X="33.625" Y="15.875" />
+        <Point X="22.25" Y="15.875" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="10.297" Y="-1.401" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="_secondReader" Type="Presentation.Interface.Readers.Reader&lt;T&gt;" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="34" Y="17.875" />
+        <Point X="33.625" Y="17.875" />
+        <Point X="33.625" Y="15.875" />
+        <Point X="22.25" Y="15.875" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="10.255" Y="-1.612" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAgQAAAQAAAAgAAAAABAAAAAAAgAAAAg=</HashCode>
+      <FileName>Interface\Readers\RangeReader.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_firstReader" />
+      <Field Name="_secondReader" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Presentation.Interface.Readers.Reader" Collapsed="true">
+    <Position X="27.25" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAIAAAAEA=</HashCode>
+      <FileName>Interface\Readers\Reader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Presentation.Interface.Readers.Reader&lt;T&gt;" Collapsed="true">
+    <Position X="20.75" Y="15.5" Width="1.5" />
+    <NestedTypes>
+      <Class Name="Presentation.Interface.Readers.Reader&lt;T&gt;.InvalidPlaceholderTypeException" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Interface\Readers\Reader.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <AssociationLine Name="Validator" Type="Presentation.Interface.Readers.Validators.Validator&lt;T&gt;" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="20.75" Y="15.642" />
+        <Point X="18.246" Y="15.642" />
+        <Point X="18.246" Y="20.75" />
+        <Point X="18.188" Y="20.75" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.004" Y="5.464" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAgABAAAgAAAAAAAAgAAAAAAAAEA=</HashCode>
+      <FileName>Interface\Readers\Reader.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="Validator" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Presentation.Interface.Readers.ReaderPostProcessor&lt;T, TU&gt;" Collapsed="true">
+    <Position X="18.5" Y="17.5" Width="1.5" />
+    <NestedTypes>
+      <Class Name="Presentation.Interface.Readers.ReaderPostProcessor&lt;T, TU&gt;.NoDefaultValueProcessorException" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Interface\Readers\ReaderPostProcessor.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <AssociationLine Name="_reader" Type="Presentation.Interface.Readers.Reader&lt;T&gt;">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.012" Y="-2.085" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAAhIAAgAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Interface\Readers\ReaderPostProcessor.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_reader" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Presentation.Interface.Readers.StringReader" Collapsed="true">
+    <Position X="16.25" Y="16.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interface\Readers\StringReader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Presentation.Interface.ClassManipulator&lt;T&gt;" Collapsed="true">
+    <Position X="9" Y="7.5" Width="1.5" />
+    <AssociationLine Name="_readers" Type="Presentation.Interface.Readers.Reader">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="18.209" Y="6.425" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>CAIAIgQCICAQAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAI=</HashCode>
+      <FileName>Interface\ClassManipulator.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="_readers" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Presentation.Interface.ConsoleAction" Collapsed="true">
+    <Position X="17" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAEAAAAAAAAAAAAAAAAAIAAAAAAAAAAQ=</HashCode>
+      <FileName>Interface\ConsoleAction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Presentation.Interface.ConsoleListUtils&lt;T&gt;" Collapsed="true">
+    <Position X="13.5" Y="8.5" Width="1.5" />
+    <NestedTypes>
+      <Class Name="Presentation.Interface.ConsoleListUtils&lt;T&gt;.IndexValidator" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Interface\ConsoleListUtils.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="Presentation.Interface.ConsoleListUtils&lt;T&gt;.DelegateComparer&lt;T&gt;" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Interface\ConsoleListUtils.cs</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+    </NestedTypes>
+    <AssociationLine Name="Table" Type="Presentation.Interface.TableOutput&lt;T&gt;" ManuallyRouted="true">
+      <Path>
+        <Point X="13.5" Y="8.846" />
+        <Point X="11.677" Y="8.846" Type="JumpStart" />
+        <Point X="11.51" Y="8.846" Type="JumpEnd" />
+        <Point X="10.052" Y="8.846" Type="JumpStart" />
+        <Point X="9.792" Y="8.846" Type="JumpEnd" />
+        <Point X="9.277" Y="8.846" />
+        <Point X="9.277" Y="11.127" />
+        <Point X="10.25" Y="11.127" />
+        <Point X="10.25" Y="12.25" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-3.132" Y="3.103" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="Manipulator" Type="Presentation.Interface.ClassManipulator&lt;T&gt;">
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="-3.866" Y="0.278" Height="0.182" Width="1.438" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAEAAIgUACgRAAICAACRYACAgAAACgAEQAAAAAAgAAI=</HashCode>
+      <FileName>Interface\ConsoleListUtils.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="Table" />
+      <Field Name="Manipulator" />
+      <Field Name="IdReader" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Presentation.Interface.ConsoleUtils" Collapsed="true">
+    <Position X="14.75" Y="7.5" Width="1.5" />
+    <NestedTypes>
+      <Class Name="Presentation.Interface.ConsoleUtils.ConflictingActionKeyException" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Interface\ConsoleUtils.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAgAIAgICABAAAAAAMAAAAAAABAAAAAAAAECAAggAA=</HashCode>
+      <FileName>Interface\ConsoleUtils.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="Actions" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Presentation.Interface.Menu" Collapsed="true">
+    <Position X="19.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAEAABAAAAAAAAAAAAAAAAAAACAAgAAA=</HashCode>
+      <FileName>Interface\Menu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Presentation.Interface.ReflectionTableOutput&lt;T&gt;" Collapsed="true">
+    <Position X="12" Y="15" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>Interface\ReflectionTableOutput.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Presentation.Interface.TableOutput&lt;T&gt;" Collapsed="true">
+    <Position X="9.5" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAARABIBAgAEQYAEAAAAAAACEIAIAAAIAAAQggABA=</HashCode>
+      <FileName>Interface\TableOutput.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="Chars" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="Columns" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Presentation.Program" Collapsed="true">
+    <Position X="23.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Logic.Storage" Collapsed="true">
+    <Position X="20" Y="12.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Logic.Model.Client" Collapsed="true">
+    <Position X="20" Y="11.75" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Struct Name="Presentation.Interface.TableColumn&lt;T&gt;" Collapsed="true">
+    <Position X="6.75" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAEAAAAAAAEAAAAAAAAAIAAAgAAAAAAA=</HashCode>
+      <FileName>Interface\TableOutput.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="Presentation.Interface.Charset" Collapsed="true">
+    <Position X="12" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ERIICAAAWCAAAqAIAAAIAAACAAEQAAAwAAAAABAQAAA=</HashCode>
+      <FileName>Interface\TableOutput.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

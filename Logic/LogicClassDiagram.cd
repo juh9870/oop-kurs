@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Logic.Model.BankAccount" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAgAEgAIAAAAAAQAAAIAAAAAAAAAQAiA=</HashCode>
+      <FileName>Model\BankAccount.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Logic.Model.Client" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="3.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAGAAAAAAAAAAIAAAAAAAAAIAAAAAAAAAAAAAgAg=</HashCode>
+      <FileName>Model\Client.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="BankAccount" />
+      <Property Name="Requirements" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Logic.Model.Offer" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="3.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACQCAAAAAAAAAAoAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Offer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Logic.Model.Realty" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="3.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACACAAAQAgAEAAIAEAAAAAAAAAAAAAAQgAAQAAAAA=</HashCode>
+      <FileName>Model\Realty.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Type" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Logic.Model.Requirements" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="8" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAQCAEAAAAAAQAIAAAAAAAAAAAAAAAAAAABQQAQAA=</HashCode>
+      <FileName>Model\Requirements.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="AcceptedTypes" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Logic.Storage" Collapsed="true">
+    <Position X="1.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAYAABAAQBAAAACBAhAIQAAAAAIABBAUCAAAAgAE=</HashCode>
+      <FileName>Storage.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Clients" />
+      <Property Name="Offers" />
+      <Property Name="Realties" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Enum Name="Logic.Model.RealtyType" Collapsed="true">
+    <Position X="5.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAABAAEAAAAAAAAAAAAAIAAAAAAAA=</HashCode>
+      <FileName>Model\RealtyType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -57,7 +57,7 @@ namespace Presentation.Interface
                 AddAction(new ConsoleAction(Terminate, exitText, int.MaxValue), '0');
         }
 
-        protected int PagesNum => List.Count / Table.RowsPerPage + 1;
+        protected int PagesNum => (List.Count-1) / Table.RowsPerPage + 1;
 
         public override void Start()
         {

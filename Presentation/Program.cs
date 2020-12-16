@@ -11,7 +11,7 @@ namespace Presentation
         private static void Main(string[] args)
         {
             Console.WriteLine("Starting up...");
-            var storage = new Storage(new JsonBundle.Factory(), new FileInterface());
+            var storage = new Storage(JsonBundleFactory.Instance, new FileInterface());
             storage.LoadData();
             new MainMenu(storage).Start();
             storage.SaveData();

@@ -19,10 +19,10 @@ namespace LogicTests
         }
 
         private Storage _storage;
-        private readonly Bundle.Factory _factory;
+        private readonly BundleFactory _factory;
         private readonly IoInterface _ioInterface;
 
-        public StorageTests(Bundle.Factory factory, IoInterface ioInterface)
+        public StorageTests(BundleFactory factory, IoInterface ioInterface)
         {
             _factory = factory;
             _ioInterface = ioInterface;

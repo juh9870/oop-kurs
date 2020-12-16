@@ -87,6 +87,11 @@ namespace Data.Bundles
             Values = bundle.Values;
         }
 
+        public override BundleFactory Factory()
+        {
+            return JsonBundleFactory.Instance;
+        }
+
         private static object JsonGet<T>(JToken element)
         {
             if (typeof(T) == typeof(DateTime)) return element.ToObject<DateTime>();
@@ -100,13 +105,19 @@ namespace Data.Bundles
             b.Put(source);
             return b.Get<T>();
         }
+    }
 
-        public new class Factory : Bundle.Factory
+    public class JsonBundleFactory : BundleFactory
+    {
+        public static JsonBundleFactory Instance = new JsonBundleFactory();
+
+        private JsonBundleFactory()
         {
-            public override Bundle CreateBundle()
-            {
-                return new JsonBundle();
-            }
+        }
+
+        public override Bundle CreateBundle()
+        {
+            return new JsonBundle();
         }
     }
 }

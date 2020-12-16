@@ -17,7 +17,7 @@
   <Class Name="Data.Bundles.JsonBundle" Collapsed="true">
     <Position X="5.75" Y="2.5" Width="1.5" />
     <NestedTypes>
-      <Class Name="Data.Bundles.JsonBundle.Factory" Collapsed="true">
+      <Class Name="Data.Bundles.JsonBundleFactory" Collapsed="true">
         <TypeIdentifier>
           <NewMemberFileName>Bundles\JsonBundle.cs</NewMemberFileName>
         </TypeIdentifier>

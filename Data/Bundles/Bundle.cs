@@ -130,16 +130,6 @@ namespace Data.Bundles {
             Put(key,list);
         }
 
-        public virtual void Put(string key, IBundlable[] array)
-        {
-            var arr = new Bundle[array.Length];
-            for (var i = 0; i < array.Length; i++)
-            {
-                arr[i] = BundleFromBundlable(array[i]);
-            }
-            Put(key,arr);
-        }
-
         public virtual Type GetType(string key)
         {
             return Type.GetType(GetString(key));
@@ -167,23 +157,14 @@ namespace Data.Bundles {
             Put(key, list);
         }
 
-        public virtual void Put(string key, Type[] array)
-        {
-            var arr = new string[array.Length];
-            for (var i = 0; i < array.Length; i++) arr[i] = array[i].AssemblyQualifiedName;
-
-            Put(key, arr);
-        }
-
-
-
         public abstract byte[] Serialize();
         public abstract void Deserialize(byte[] data);
 
-        public abstract class Factory
-        {
-            public abstract Bundle CreateBundle();
-        }
+        public abstract BundleFactory Factory();
+    }
 
+    public abstract class BundleFactory
+    {
+        public abstract Bundle CreateBundle();
     }
 }

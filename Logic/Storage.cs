@@ -9,7 +9,7 @@ namespace Logic
     public class Storage
     {
         public const int OffersPerClient = 5;
-        private readonly Bundle.Factory _bundleFactory;
+        private readonly BundleFactory _bundleFactory;
         private readonly IoInterface _ioInterface;
         private Dictionary<string, int> _clientOffers;
 
@@ -18,7 +18,7 @@ namespace Logic
         private Dictionary<string, Realty> _realties;
 
 
-        public Storage(Bundle.Factory bundleFactory, IoInterface ioInterface)
+        public Storage(BundleFactory bundleFactory, IoInterface ioInterface)
         {
             _bundleFactory = bundleFactory;
             _ioInterface = ioInterface;

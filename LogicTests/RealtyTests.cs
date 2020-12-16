@@ -6,7 +6,7 @@ namespace LogicTests
 {
     public class RealtyTests
     {
-        public static Bundle.Factory[] Factories = CommonData.BundleFactories;
+        public static BundleFactory[] Factories = CommonData.BundleFactories;
 
         private Realty _realty;
 
@@ -23,7 +23,7 @@ namespace LogicTests
         }
 
         [Test]
-        public void Should_Be_Same_After_Storing_And_Restoring([ValueSource(nameof(Factories))] Bundle.Factory factory)
+        public void Should_Be_Same_After_Storing_And_Restoring([ValueSource(nameof(Factories))] BundleFactory factory)
         {
             var b = factory.CreateBundle();
             b.Put(_realty);

@@ -84,10 +84,10 @@ namespace LogicTests
             testCase.Assert(_requirements.IsAcceptable(_comparisonRealty));
         }
 
-        public static Bundle.Factory[] Factories = CommonData.BundleFactories;
+        public static BundleFactory[] Factories = CommonData.BundleFactories;
 
         [Test]
-        public void Should_Be_Same_After_Storing_And_Restoring([ValueSource(nameof(Factories))] Bundle.Factory factory)
+        public void Should_Be_Same_After_Storing_And_Restoring([ValueSource(nameof(Factories))] BundleFactory factory)
         {
             _requirements.AcceptedTypes.Add(RealtyType.Flat);
             _requirements.AcceptedTypes.Add(RealtyType.Room);

@@ -4,9 +4,11 @@ namespace LogicTests
 {
     public class CommonData
     {
-        public static readonly Bundle.Factory[] BundleFactories =
+        public static readonly BundleFactory[] BundleFactories =
         {
-            new JsonBundle.Factory()
+            JsonBundleFactory.Instance,
+            BinaryBundleFactory.Instance,
+            XmlBundleFactory.Instance, 
         };
     }
 }

@@ -1,4 +1,5 @@
 using Presentation.Interface.Readers.Validators;
+
 namespace Presentation.Interface.Readers {
     public class ShortReader : NumericReader<short>
     {

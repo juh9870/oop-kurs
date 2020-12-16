@@ -10,8 +10,9 @@ namespace Presentation.Connectors
         public static RealtyOrClientTable RealtyOrClientTable = new RealtyOrClientTable(Charset.SymbolicCharset, 5);
         public RealtyOrClientList(TableOutput<RealtyOrClient> table, string exitText) : base(table, exitText)
         {
-            ObjectName = "Realty or Client";
         }
+
+        protected override string ObjectName => "Realty or Client";
 
         protected override void ShowItemDetails(int id)
         {

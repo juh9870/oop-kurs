@@ -13,7 +13,6 @@ namespace Presentation.Interface
         protected Reader<int> IdReader;
 
         protected ClassManipulator<T> Manipulator;
-        protected string ObjectName;
         protected int Page;
 
         protected IComparer<T> SortComparer;
@@ -31,7 +30,6 @@ namespace Presentation.Interface
         private ConsoleListUtils(bool isReadonly, TableOutput<T> table, string exitText)
         {
             List = new List<T>();
-            ObjectName = typeof(T).Name;
             Table = table;
 
             IdReader = new IntReader($"{ObjectName} index", new IndexValidator(List));
@@ -59,6 +57,8 @@ namespace Presentation.Interface
 
         protected int PagesNum => (List.Count-1) / Table.RowsPerPage + 1;
 
+        protected virtual string ObjectName => typeof(T).Name;
+
         public override void Start()
         {
             UpdateList();
@@ -82,6 +82,7 @@ namespace Presentation.Interface
                 Console.WriteLine("Adding canceled");
             }
 
+            UpdateList();
             Pause();
         }
 

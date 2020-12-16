@@ -18,7 +18,7 @@ namespace Presentation.Interface.Readers
         {
             var hasPlaceholder = defaultValue != null;
             if (hasPlaceholder)
-                if (typeof(T) != defaultValue.GetType())
+                if (typeof(T) != defaultValue.GetType() && typeof(int) != defaultValue.GetType())
                     throw new InvalidPlaceholderTypeException(typeof(T), defaultValue.GetType());
             Console.WriteLine(Message);
             for (var i = 0; i < _values.Length; i++)
